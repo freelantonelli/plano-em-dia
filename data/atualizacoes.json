@@ -1,0 +1,30 @@
+[
+  {
+    "id": "TRA-01",
+    "data": "2026-05-27",
+    "status": "no_congresso",
+    "nota": "PEC 221/2019 aprovada na Câmara; segue para o Senado.",
+    "fonte": "https://www.correio24horas.com.br/brasil/alcolumbre-coloca-pec-da-escala-6x1-na-pauta-do-senado-de-6-de-outubro-2-dias-apos-1-turno-1026"
+  },
+  {
+    "id": "TRA-01",
+    "data": "2026-10-16",
+    "status": "cumprido",
+    "nota": "Senado aprovou por 75 a 1 em 14/10 e o Congresso promulgou a emenda em 16/10, antes do início do novo mandato. Texto prevê jornada de 40 horas sem redução salarial. Próximo ponto a acompanhar: a transição para a escala 5x2.",
+    "fonte": "https://portaldeprefeitura.com.br/bastidores-da-politica/senado-federal/alcolumbre-promulga-pec-que-acaba-com-escala-6x1-nesta-sexta/634186/"
+  },
+  {
+    "id": "SEG-01",
+    "data": "2026-03-04",
+    "status": "no_congresso",
+    "nota": "PEC 18/2025 aprovada na Câmara em dois turnos (461 a 14 no segundo); segue para o Senado.",
+    "fonte": "https://www.band.com.br/noticias/jornal-da-noite/ultimas/camara-aprova-pec-da-seguranca-publica-texto-vai-ao-senado-202603050111"
+  },
+  {
+    "id": "SEG-01",
+    "data": "2026-11-03",
+    "status": "no_congresso",
+    "nota": "Aprovada no Senado em dois turnos (75 a 0 no segundo), sem a redução da maioridade penal, que vai tramitar separadamente. Segue para promulgação.",
+    "fonte": "https://www12.senado.leg.br/noticias/materias/2026/11/03/senado-aprova-pec-da-seguranca-publica-sem-reducao-da-maioridade-penal"
+  }
+]

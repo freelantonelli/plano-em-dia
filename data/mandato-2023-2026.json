@@ -1,0 +1,84 @@
+{
+  "placares": [
+    {
+      "fonte": "g1 · Promessas dos Políticos",
+      "recorte": "36 promessas de 2022 consideradas mensuráveis pelo g1. Período: 1º/1/2023 a 30/6/2026.",
+      "cumprido": 26,
+      "parcial": 4,
+      "descumprido": 6,
+      "andamento": 0,
+      "total": 36,
+      "data": "2026-07-22",
+      "nota": "O g1 atualiza o balanço ao fim do mandato, em dezembro. A promulgação da PEC da 6x1, em outubro, levaria o total de cumpridas a 27, segundo o jornal O Povo.",
+      "url": "https://bahiaeconomica.com.br/2026/07/22/governo-lula-cumpriu-26-das-promessas-de-campanha-mostra-levantamento"
+    },
+    {
+      "fonte": "Folha de S.Paulo",
+      "recorte": "103 promessas tiradas do programa, da propaganda eleitoral, da carta de compromissos e de entrevistas de 2022. Balanço da metade do mandato.",
+      "cumprido": 29,
+      "parcial": 0,
+      "descumprido": 0,
+      "andamento": 74,
+      "total": 103,
+      "data": "2025-01-19",
+      "nota": "Das 74 não concluídas, a Folha classificou 29% do total como em andamento, 25% em execução lenta e 17% paradas. Este é o último balanço completo da Folha encontrado.",
+      "url": "https://www.gazetadopovo.com.br/republica/lula-metade-mandato-28-promessas-cumpridas/"
+    }
+  ],
+  "itens": [
+    {
+      "titulo": "Reforma tributária do consumo",
+      "status": "cumprido",
+      "nota": "Aprovada. A implantação vai até 2033, e o g1 a classificou como cumprida.",
+      "fonte": "https://www.boca.com.br/politica/lula-cumpre-26-das-36-promessas-feitas-em-2022"
+    },
+    {
+      "titulo": "Isenção de Imposto de Renda para quem ganha até R$ 5 mil",
+      "status": "cumprido",
+      "nota": "Aprovada e em vigor, segundo o balanço do g1.",
+      "fonte": "https://www.boca.com.br/politica/lula-cumpre-26-das-36-promessas-feitas-em-2022"
+    },
+    {
+      "titulo": "Recriar os ministérios da Cultura, da Previdência e da Pesca e criar o dos Povos Indígenas",
+      "status": "cumprido",
+      "nota": "Feito nos primeiros meses de 2023.",
+      "fonte": "https://jovempan.com.br/politica/fim-do-orcamento-secreto-isencao-do-ir-e-mais-o-que-sobrou-das-promessas-de-lula-apos-seis-meses-de-governo/"
+    },
+    {
+      "titulo": "Fim da escala 6x1 com jornada de 40 horas",
+      "status": "cumprido",
+      "nota": "Emenda constitucional promulgada em 16/10/2026.",
+      "fonte": "https://mais.opovo.com.br/jornal/farol/2026/10/18/6x1-promessas-cumpridas-e-pressao-por-ajustes.html"
+    },
+    {
+      "titulo": "Internet banda larga em todas as escolas públicas",
+      "status": "parcial",
+      "nota": "A cobertura passou de 45,4% (2023) para 72,9% (2026), segundo dados do MEC citados pelo g1. Meta não atingida.",
+      "fonte": "https://www.boca.com.br/politica/lula-cumpre-26-das-36-promessas-feitas-em-2022"
+    },
+    {
+      "titulo": "Zerar as filas de exames e cirurgias acumuladas na pandemia",
+      "status": "descumprido",
+      "nota": "O g1 classificou como não cumprida, embora novos programas tenham sido lançados.",
+      "fonte": "https://www.boca.com.br/politica/lula-cumpre-26-das-36-promessas-feitas-em-2022"
+    },
+    {
+      "titulo": "Criar o Ministério da Segurança Pública",
+      "status": "descumprido",
+      "nota": "Não criado até 30/6/2026. O governo condicionou a criação à PEC da Segurança, aprovada pelo Senado em 3/11/2026. A promessa foi repetida no plano 2027–2030 (item SEG-02).",
+      "fonte": "https://newsrondonia.com.br/politica/2026/07/22/balanco-de-governo-de-lula-aponta-26-promessas-cumpridas/"
+    },
+    {
+      "titulo": "Revogar os sigilos de 100 anos",
+      "status": "descumprido",
+      "nota": "Houve despacho mandando a CGU reavaliar os sigilos, e dezenas de casos foram revistos, mas sem a revogação integral prometida.",
+      "fonte": "https://newsrondonia.com.br/politica/2026/07/22/balanco-de-governo-de-lula-aponta-26-promessas-cumpridas/"
+    },
+    {
+      "titulo": "Não disputar a reeleição em 2026",
+      "status": "descumprido",
+      "nota": "Na campanha de 2022, Lula disse que seria presidente de um mandato só. Disputou e venceu a eleição de 2026.",
+      "fonte": "https://newsrondonia.com.br/politica/2026/07/22/balanco-de-governo-de-lula-aponta-26-promessas-cumpridas/"
+    }
+  ]
+}
