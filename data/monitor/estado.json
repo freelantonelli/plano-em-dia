@@ -1,1 +1,22 @@
-{}
+{
+  "SEG-01": {
+    "id": 2500080,
+    "proposicao": "PEC 18/2025",
+    "dataHora": "2026-03-10T00:00",
+    "situacao": "Aguardando Apreciação pelo Senado Federal",
+    "tramitacao": "Expedição de Documento",
+    "orgao": "MESA",
+    "despacho": "Remessa ao Senado Federal por meio do Of. nº 35/2023/SGM-P.umento",
+    "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2500080"
+  },
+  "TRA-01": {
+    "id": 2233802,
+    "proposicao": "PEC 221/2019",
+    "dataHora": "2026-10-16T00:00",
+    "situacao": "Transformado em Norma Jurídica",
+    "tramitacao": "Transformação em Norma Jurídica",
+    "orgao": "MESA",
+    "despacho": "Transformado na Emenda Constitucional 141/2026. DOU 16/10/2026 PÁG 02 COL 02 - Edição Extra A.",
+    "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2233802"
+  }
+}
