@@ -1,5 +1,6 @@
 import compromissosJson from "../data/compromissos.json";
 import atualizacoesJson from "../data/atualizacoes.json";
+import verificacoesJson from "../data/verificacoes.json";
 
 export type Tipo = "meta" | "entrega" | "diretriz";
 export type Natureza = "novo" | "continuidade" | "ampliacao";
@@ -38,7 +39,11 @@ export interface Atualizacao {
 export interface CompromissoComStatus extends Compromisso {
   status: Status;
   historico: Atualizacao[];
+  verificado_em: string;
 }
+
+export const REPO = "https://github.com/freelantonelli/plano-em-dia";
+export const DIAS_PARA_DESATUALIZADO = 90;
 
 export const EIXOS: Record<number, { nome: string; curto: string }> = {
   1: { nome: "Fortalecer a democracia, a participação social e modernizar o Estado", curto: "Democracia e Estado" },
@@ -90,6 +95,7 @@ export const INICIO_MANDATO = "janeiro de 2027";
 
 const compromissos = compromissosJson as Compromisso[];
 const atualizacoes = atualizacoesJson as Atualizacao[];
+const verificacoes = verificacoesJson as Record<string, string>;
 
 export function carregar(): CompromissoComStatus[] {
   return compromissos.map((c) => {
@@ -97,7 +103,8 @@ export function carregar(): CompromissoComStatus[] {
       .filter((a) => a.id === c.id)
       .sort((a, b) => a.data.localeCompare(b.data));
     const ultimo = historico[historico.length - 1];
-    return { ...c, status: ultimo ? ultimo.status : "nao_iniciado", historico };
+    const datas = [verificacoes[c.id] ?? verificacoes._padrao, ...historico.map((h) => h.data)].filter(Boolean).sort();
+    return { ...c, status: ultimo ? ultimo.status : "nao_iniciado", historico, verificado_em: datas[datas.length - 1] };
   });
 }
 

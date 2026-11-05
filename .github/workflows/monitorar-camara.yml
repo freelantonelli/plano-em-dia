@@ -1,0 +1,46 @@
+name: Monitorar Câmara
+
+on:
+  schedule:
+    - cron: "17 10 * * *" # todo dia, 07h17 em Brasília
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: monitor
+  cancel-in-progress: false
+
+jobs:
+  monitorar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Consultar API da Câmara
+        run: node scripts/monitorar-camara.mjs
+
+      - name: Abrir issue para revisão
+        if: hashFiles('mudancas.md') != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh label create monitor --color 1f4e5a --description "Mudança detectada pelo robô" 2>/dev/null || true
+          gh issue create \
+            --title "Tramitação mudou na Câmara ($(date -u +%d/%m/%Y))" \
+            --label monitor \
+            --body-file mudancas.md
+
+      - name: Salvar estado
+        run: |
+          rm -f mudancas.md
+          git config user.name "plano-em-dia-bot"
+          git config user.email "plano-em-dia-bot@users.noreply.github.com"
+          git add data/monitor/estado.json
+          git diff --cached --quiet || (git commit -m "monitor: estado da Câmara em $(date -u +%Y-%m-%d)" && git push)

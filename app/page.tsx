@@ -10,6 +10,8 @@ import {
   NATUREZAS,
   INSTRUMENTOS,
   INICIO_MANDATO,
+  REPO,
+  DIAS_PARA_DESATUALIZADO,
   type CompromissoComStatus,
   type Status,
   type Tipo,
@@ -226,7 +228,7 @@ export default function Page() {
       <footer className="foot">
         <div className="wrap">
           <span>Projeto independente, sem vínculo com governo, partido ou campanha.</span>
-          <span>Fonte primária: Programa de Governo registrado no <a href={PLANO_TSE}>TSE (DivulgaCandContas)</a>.</span>
+          <span>Fonte primária: Programa de Governo registrado no <a href={PLANO_TSE}>TSE (DivulgaCandContas)</a> · <a href={REPO}>Código e histórico no GitHub</a></span>
         </div>
       </footer>
 
@@ -273,6 +275,13 @@ function Detalhe({ c, onClose }: { c: CompromissoComStatus; onClose: () => void 
             <dt>Depende de</dt><dd><b>{INSTRUMENTOS[c.instrumento].rotulo}</b>: {INSTRUMENTOS[c.instrumento].desc}</dd>
             <dt>Quem responde</dt><dd>{c.orgao}</dd>
             <dt>Como saber se foi cumprido</dt><dd>{c.verificacao}</dd>
+            <dt>Última verificação</dt>
+            <dd>
+              {c.verificado_em.split("-").reverse().join("/")}
+              {(Date.now() - new Date(c.verificado_em + "T12:00:00").getTime()) / 86400000 > DIAS_PARA_DESATUALIZADO && (
+                <span className="chip tipo-diretriz" style={{ marginLeft: 8 }}>Pode estar desatualizado</span>
+              )}
+            </dd>
           </dl>
 
           {c.situacao_plano && (
@@ -311,6 +320,15 @@ function Detalhe({ c, onClose }: { c: CompromissoComStatus; onClose: () => void 
               <button className="btn ghost" onClick={() => setMostrarLAI(!mostrarLAI)}>{mostrarLAI ? "Esconder texto" : "Ver texto"}</button>
             </div>
             {mostrarLAI && <textarea className="lai" readOnly value={texto} />}
+          </div>
+
+          <div className="box">
+            <h4>Algo mudou ou está errado?</h4>
+            <p>Mande a fonte. Toda sugestão é conferida antes de entrar no site, e fica pública no GitHub.</p>
+            <a className="btn ghost" style={{ display: "inline-block", textDecoration: "none" }}
+              href={`${REPO}/issues/new?template=correcao.yml&title=${encodeURIComponent(`[Correção] ${c.id}`)}&compromisso=${c.id}`}>
+              Sugerir correção
+            </a>
           </div>
         </div>
       </aside>

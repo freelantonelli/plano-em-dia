@@ -1,0 +1,38 @@
+name: Sugerir correção ou atualização
+description: Algo mudou ou está errado em um compromisso? Mande a fonte.
+title: "[Correção] "
+labels: ["sugestao"]
+body:
+  - type: input
+    id: compromisso
+    attributes:
+      label: Código do compromisso
+      description: Aparece no topo do detalhe, por exemplo SEG-02.
+      placeholder: SEG-02
+    validations:
+      required: true
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: O que você quer sugerir?
+      options:
+        - Mudança de status (algo foi feito, aprovado, abandonado…)
+        - Correção de informação (órgão, trecho, página, classificação)
+        - Outro
+    validations:
+      required: true
+  - type: textarea
+    id: descricao
+    attributes:
+      label: O que mudou?
+      placeholder: "Ex.: Decreto nº X, de DD/MM/AAAA, instituiu a política."
+    validations:
+      required: true
+  - type: input
+    id: fonte
+    attributes:
+      label: Link da fonte
+      description: Diário Oficial, Câmara, Senado, portal do governo, resposta via LAI ou reportagem. Sem fonte, a sugestão não pode ser usada.
+      placeholder: https://
+    validations:
+      required: true

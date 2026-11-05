@@ -1,0 +1,5 @@
+{
+  "_comentario": "Liga cada compromisso a uma proposição na Câmara. Quando o governo enviar um novo projeto ligado a um compromisso, adicione aqui. O robô passa a acompanhar no dia seguinte.",
+  "SEG-01": { "siglaTipo": "PEC", "numero": 18, "ano": 2025 },
+  "TRA-01": { "siglaTipo": "PEC", "numero": 221, "ano": 2019 }
+}

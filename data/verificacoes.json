@@ -1,0 +1,4 @@
+{
+  "_comentario": "Data da última conferência de cada compromisso, mesmo quando nada mudou. '_padrao' vale para os itens sem data própria. Uma atualização de status também conta como verificação.",
+  "_padrao": "2026-11-05"
+}
