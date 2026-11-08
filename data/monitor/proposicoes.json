@@ -1,5 +1,8 @@
 {
   "_comentario": "Liga cada compromisso a uma proposição na Câmara. Quando o governo enviar um novo projeto ligado a um compromisso, adicione aqui. O robô passa a acompanhar no dia seguinte.",
   "SEG-01": { "siglaTipo": "PEC", "numero": 18, "ano": 2025 },
-  "TRA-01": { "siglaTipo": "PEC", "numero": 221, "ano": 2019 }
+  "TRA-01": { "siglaTipo": "PEC", "numero": 221, "ano": 2019 },
+  "AGR-02": { "siglaTipo": "MPV", "numero": 1399, "ano": 2026 },
+  "TRA-04": { "siglaTipo": "PLP", "numero": 12, "ano": 2024 },
+  "TRA-08": { "siglaTipo": "PL", "numero": 1893, "ano": 2026 }
 }
