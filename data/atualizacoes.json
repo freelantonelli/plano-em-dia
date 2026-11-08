@@ -26,5 +26,26 @@
     "status": "no_congresso",
     "nota": "Aprovada no Senado em dois turnos (75 a 0 no segundo), sem a redução da maioridade penal, que vai tramitar separadamente. Segue para promulgação.",
     "fonte": "https://www12.senado.leg.br/noticias/materias/2026/11/03/senado-aprova-pec-da-seguranca-publica-sem-reducao-da-maioridade-penal"
+  },
+  {
+    "id": "AGR-02",
+    "data": "2026-11-04",
+    "status": "no_congresso",
+    "nota": "Medida Provisória nº 1.399, de 04/11/2026, fixa as alíquotas do Imposto Seletivo para 2027, com efeitos a partir de 02/02/2027. O art. 15 determina o envio, até 31/05/2027, de projeto de lei com as alíquotas a partir de 2028. A MP precisa ser votada pelo Congresso para virar lei.",
+    "fonte": "https://legis.senado.gov.br/sdleg-getter/documento/download/b2392634-dd73-4361-8927-fa60c2aa8c64?disposition=inline"
+  },
+  {
+    "id": "TRA-04",
+    "data": "2026-11-08",
+    "status": "no_congresso",
+    "nota": "PLP 12/2024, do Poder Executivo (apresentado em 05/03/2024), regula o trabalho por aplicativo de transporte e cria mecanismos de inclusão previdenciária. Tramita em regime de prioridade; situação em 08/11/2026: pronto para pauta na Comissão de Indústria, Comércio e Serviços da Câmara.",
+    "fonte": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2419243"
+  },
+  {
+    "id": "TRA-08",
+    "data": "2026-11-08",
+    "status": "no_congresso",
+    "nota": "PL 1893/2026, do Poder Executivo (apresentado em 16/04/2026), regulamenta a negociação coletiva no setor público. Urgência aprovada em 09/06/2026; relator em Plenário: dep. André Figueiredo (PDT-CE). Situação em 08/11/2026: pronto para pauta no Plenário da Câmara, sem votação.",
+    "fonte": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2617268"
   }
 ]
