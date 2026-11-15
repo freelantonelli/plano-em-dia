@@ -47,5 +47,12 @@
     "status": "no_congresso",
     "nota": "PL 1893/2026, do Poder Executivo (apresentado em 16/04/2026), regulamenta a negociação coletiva no setor público. Urgência aprovada em 09/06/2026; relator em Plenário: dep. André Figueiredo (PDT-CE). Situação em 08/11/2026: pronto para pauta no Plenário da Câmara, sem votação.",
     "fonte": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2617268"
+  },
+  {
+    "id": "ECO-03",
+    "data": "2026-09-16",
+    "status": "cumprido",
+    "nota": "Lei nº 15.506, de 16/09/2026 (DOU, edição extra), institui a Política Nacional de Minerais Críticos e Estratégicos. Origem: PL 2.780/2024, do dep. Zé Silva (Solidariedade-MG), aprovado na Câmara em 06/05/2026 e no Senado em 02/09/2026. Cria o Conselho Nacional para Industrialização de Minerais Críticos e Estratégicos (Cimce), vinculado à Presidência, e o Fundo Garantidor da Atividade Mineral, com participação da União de até R$ 2 bilhões. Próximo ponto a acompanhar: regulamentação e instalação do conselho.",
+    "fonte": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15506.htm"
   }
 ]
